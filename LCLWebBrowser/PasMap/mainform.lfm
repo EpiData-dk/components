@@ -1,0 +1,37 @@
+object MainForm: TMainForm
+  Left = 247
+  Height = 590
+  Top = 108
+  Width = 830
+  Caption = 'PasMap'
+  ClientHeight = 590
+  ClientWidth = 830
+  LCLVersion = '1.8.0.3'
+  Visible = True
+  object WebBrowser1: TWebBrowser
+    Left = 10
+    Height = 520
+    Top = 10
+    Width = 808
+    OnLinkClick = WebBrowser1LinkClick
+    OnPageLoaded = WebBrowser1PageLoaded
+    OnPageLoadError = WebBrowser1PageLoadError
+  end
+  object Button1: TButton
+    Left = 352
+    Height = 25
+    Top = 552
+    Width = 128
+    Caption = 'Update Map'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 512
+    Height = 24
+    Top = 552
+    Width = 100
+    AutoSize = False
+    ParentColor = False
+  end
+end

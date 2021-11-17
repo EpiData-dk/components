@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Makefile Value="True"/>
+  <Params Value=" -MDelphi -Sah -CX -g -gl -gw -vewnhi -l -FuCiphers;Hashes;lib/%(CPU_TARGET)-%(OS_TARGET);../lazarus/packager/units/%(CPU_TARGET)-%(OS_TARGET);. -Xd -dDCP1COMPAT dcpcrypt.pas"/>
+</CONFIG>

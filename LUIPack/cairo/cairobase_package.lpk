@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="cairobase_package"/>
+    <Author Value="Luiz Américo Pereira Câmara"/>
+    <CompilerOptions>
+      <Version Value="8"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="api\;classes\"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Provide raw api and classes to use cairo with fpc
+"/>
+    <License Value="Modified LGPL
+"/>
+    <Version Minor="1"/>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="classes\cairoclasses.pas"/>
+        <UnitName Value="CairoClasses"/>
+      </Item1>
+      <Item2>
+        <Filename Value="classes\objectavltree.pas"/>
+        <UnitName Value="ObjectAvlTree"/>
+      </Item2>
+      <Item3>
+        <Filename Value="classes\cairoutils.pas"/>
+        <UnitName Value="CairoUtils"/>
+      </Item3>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)\"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedpackage\"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

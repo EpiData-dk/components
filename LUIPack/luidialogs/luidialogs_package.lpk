@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="luidialogs_package"/>
+    <Type Value="RunAndDesignTime"/>
+    <AddToProjectUsesSection Value="True"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="forms;units"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+    </CompilerOptions>
+    <Files Count="6">
+      <Item1>
+        <Filename Value="forms\fexportdataset.pas"/>
+        <UnitName Value="fExportDataset"/>
+      </Item1>
+      <Item2>
+        <Filename Value="luidialogs.pas"/>
+        <UnitName Value="LuiDialogs"/>
+      </Item2>
+      <Item3>
+        <Filename Value="register_luidialogs.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="register_luidialogs"/>
+      </Item3>
+      <Item4>
+        <Filename Value="forms\fframeeditor.lfm"/>
+        <Type Value="LFM"/>
+      </Item4>
+      <Item5>
+        <Filename Value="forms\fframeeditor.pas"/>
+        <UnitName Value="fFrameEditor"/>
+      </Item5>
+      <Item6>
+        <Filename Value="luinotifications.pas"/>
+        <UnitName Value="LuiNotifications"/>
+      </Item6>
+    </Files>
+    <RequiredPkgs Count="5">
+      <Item1>
+        <PackageName Value="LuiLCLComponents"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="luicairo_extras"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="luicomponents"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item5>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

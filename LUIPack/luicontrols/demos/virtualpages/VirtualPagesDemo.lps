@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="VirtualPagesDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainViewForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainView"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="22"/>
+        <CursorPos X="112" Y="31"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="testview1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TestView1Frame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="TestView1"/>
+        <UsageCount Value="21"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="testview2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TestView2Frame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="TestView2"/>
+        <UsageCount Value="21"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../virtualpages.pas"/>
+        <UnitName Value="VirtualPages"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="438"/>
+        <CursorPos Y="449"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../luicomponents/luimiscutils.pas"/>
+        <UnitName Value="LuiMiscUtils"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="3" Y="18"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="2">
+      <Position1>
+        <Filename Value="mainview.pas"/>
+        <Caret Line="5" Column="38"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainview.pas"/>
+        <Caret Line="31" Column="112" TopLine="23"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../../virtualpages.pas"/>
+        <Caret Line="445" Column="3" TopLine="438"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../../../luicomponents/luimiscutils.pas"/>
+        <Caret Line="18" Column="3"/>
+      </Position4>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

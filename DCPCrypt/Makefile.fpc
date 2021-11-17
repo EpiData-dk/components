@@ -1,0 +1,59 @@
+#
+#   Makefile.fpc for dcpcrypt 2.0.4.1
+#
+
+[package]
+name=dcpcrypt
+version=2.0.4.1
+
+[compiler]
+options= -MDelphi -Sah -CX -dDCP1COMPAT
+unittargetdir=lib/$(CPU_TARGET)-$(OS_TARGET)
+unitdir=Ciphers \
+	Hashes \
+	lib/$(CPU_TARGET)-$(OS_TARGET) \
+	$(LAZ_PATH)/packager/units/$(CPU_TARGET)-$(OS_TARGET)
+
+[target]
+units=dcpcrypt.pas
+
+[clean]
+files=$(wildcard $(COMPILER_UNITTARGETDIR)/*$(OEXT)) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*$(PPUEXT)) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*$(RSTEXT)) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.lfm) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.res) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.compiled) \
+      $(wildcard *$(OEXT)) $(wildcard *$(PPUEXT)) $(wildcard *$(RSTEXT))
+[prerules]
+# Include to find paths to required packages.
+include Makefile.rc
+
+# LCL Platform
+ifndef LCL_PLATFORM
+ifeq ($(OS_TARGET),win32)
+LCL_PLATFORM=win32
+else
+ifeq ($(OS_TARGET),win64)
+LCL_PLATFORM=win32
+else
+ifeq ($(OS_TARGET),darwin)
+LCL_PLATFORM=carbon
+else
+LCL_PLATFORM=gtk2
+endif
+endif
+endif
+endif
+export LCL_PLATFORM
+
+[rules]
+.PHONY: cleartarget compiled all
+
+cleartarget:
+        -$(DEL) $(COMPILER_UNITTARGETDIR)/dcpcrypt$(PPUEXT)
+
+compiled:
+        $(COPY) Makefile.compiled $(COMPILER_UNITTARGETDIR)/dcpcrypt.compiled
+
+all: cleartarget $(COMPILER_UNITTARGETDIR) dcpcrypt$(PPUEXT) compiled

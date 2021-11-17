@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="luicairo_package"/>
+    <CompilerOptions>
+      <Version Value="5"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+      </SearchPaths>
+      <CodeGeneration>
+        <Generate Value="Faster"/>
+      </CodeGeneration>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="luibar.pas"/>
+        <UnitName Value="LuiBar"/>
+      </Item1>
+      <Item2>
+        <Filename Value="register_luicairo.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="register_luicairo"/>
+      </Item2>
+      <Item3>
+        <Filename Value="luicairocontrols.pas"/>
+        <UnitName Value="luicairocontrols"/>
+      </Item3>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="cairobase_package"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="multiloglaz"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="cairolcl_package"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedpackage\"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

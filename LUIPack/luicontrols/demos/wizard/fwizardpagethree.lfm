@@ -1,0 +1,31 @@
+object PageThreeFrame: TPageThreeFrame
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  TabOrder = 0
+  DesignLeft = 2620
+  DesignTop = 374
+  object DefaultRadioButton: TRadioButton
+    Left = 24
+    Height = 19
+    Top = 59
+    Width = 160
+    Caption = 'Default Configuration'
+    Checked = True
+    OnChange = DefaultRadioButtonChange
+    TabOrder = 0
+    TabStop = True
+  end
+  object CustomRadioButton: TRadioButton
+    Left = 24
+    Height = 19
+    Top = 88
+    Width = 89
+    Caption = 'Customize'
+    OnChange = DefaultRadioButtonChange
+    TabOrder = 1
+  end
+end
