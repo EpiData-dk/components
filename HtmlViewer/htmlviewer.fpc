@@ -1,0 +1,13 @@
+# options:
+-MDelphi
+-Sg
+-CX
+-XX
+-Xs
+-O2
+
+# Output:
+-FU%TARGET_PATH/$fpctarget
+
+# Units:
+-Fu./source/

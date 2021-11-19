@@ -1,0 +1,16 @@
+# options:
+-CX
+-XX
+-Xs
+-O2
+
+# Output:
+-FU%TARGET_PATH/$fpctarget
+
+# Units:
+-Fu./ide
+-Fu./ide/forms
+-Fu./frames
+
+# Very special reference - requires that luicomponents are build first!!!
+-Fu../luicomponents/target/units/$fpctarget

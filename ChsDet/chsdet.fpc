@@ -1,0 +1,18 @@
+# options:
+-CX
+-XX
+-Xs
+-MDelphi
+-O2
+
+# Output:
+-FU%TARGET_PATH/$fpctarget
+
+# Units:
+-Fu.
+-Fu./src
+-Fu./src/sbseq
+
+# Includes:
+-Fi./src/mbclass
+-Fi./src/stat

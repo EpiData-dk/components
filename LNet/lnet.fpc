@@ -1,0 +1,19 @@
+# options:
+-CX
+-XX
+-Xs
+-S2
+-O2
+-Sm
+-dLNET_BASE
+
+# Output:
+-FU%TARGET_PATH/$fpctarget
+
+# Units:
+-Fu.
+-Fu./lib/
+
+# includes
+-Fi./lib/sys
+-Fi./lib/
