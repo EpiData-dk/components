@@ -46,4 +46,4 @@ jobs:
         run: |
           mvn versions:set -DnewVersion=${COMPONENTS_VERSION}.${GITHUB_RUN_NUMBER} -f deploy.pom.xml
           mvn deploy -f deploy.pom.xml
-          scripts/remove_lazarus.sh
+
