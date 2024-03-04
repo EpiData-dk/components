@@ -42,7 +42,7 @@ begin
   if ReadMeCheckBox.Checked then
     FConfigData.Booleans['readme'] := True
   else
-    ;//RemoveJSONProp(FConfigData, 'readme');
+    RemoveJSONProp(FConfigData, 'readme');
 end;
 
 procedure TPageFiveFrame.PageShow;

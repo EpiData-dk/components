@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 2683
+  Left = 338
   Height = 432
-  Top = 152
+  Top = 192
   Width = 590
   Caption = 'Wizard Demo'
   ClientHeight = 432
@@ -9,7 +9,7 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
-  LCLVersion = '1.9.0.0'
+  LCLVersion = '1.1'
   object TopPanel: TPanel
     Left = 0
     Height = 50
@@ -23,9 +23,9 @@ object MainForm: TMainForm
     TabOrder = 0
     object TitleLabel: TLabel
       Left = 8
-      Height = 19
+      Height = 21
       Top = 1
-      Width = 88
+      Width = 75
       Caption = 'TitleLabel'
       Font.Height = -16
       Font.Style = [fsBold]
@@ -34,9 +34,9 @@ object MainForm: TMainForm
     end
     object DescriptionLabel: TLabel
       Left = 16
-      Height = 17
+      Height = 15
       Top = 28
-      Width = 109
+      Width = 88
       Caption = 'DescriptionLabel'
       ParentColor = False
     end
