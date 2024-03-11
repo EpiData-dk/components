@@ -797,13 +797,14 @@ var
 begin
   VariantType := VarType(Value);
   case VariantType of
+    varempty: JSONObj.Delete(PropName);
     varnull:
     begin
       if SetNull then
         JSONObj.Elements[PropName] := TJSONNull.Create;
     end;
     varstring, varolestr: JSONObj.Elements[PropName] := TJSONString.Create(Value);
-    vardouble, vardate: JSONObj.Elements[PropName] := TJSONFloatNumber.Create(Value);
+    vardouble, vardate, varCurrency: JSONObj.Elements[PropName] := TJSONFloatNumber.Create(Value);
     varinteger, varlongword: JSONObj.Elements[PropName] := TJSONIntegerNumber.Create(Value);
     varint64, varqword: JSONObj.Elements[PropName] := TJSONInt64Number.Create(Value);
     varboolean: JSONObj.Elements[PropName] := TJSONBoolean.Create(Value);

@@ -8,7 +8,7 @@ object MainViewForm: TMainViewForm
   ClientWidth = 523
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '1.9.0.0'
+  LCLVersion = '1.1'
   object PageListBox: TListBox
     Left = 2
     Height = 393
@@ -18,9 +18,7 @@ object MainViewForm: TMainViewForm
     BorderSpacing.Around = 2
     ItemHeight = 0
     OnSelectionChange = PageListBoxSelectionChange
-    ScrollWidth = 160
     TabOrder = 0
-    TopIndex = -1
   end
   object Panel1: TPanel
     Left = 242
@@ -33,7 +31,6 @@ object MainViewForm: TMainViewForm
   end
   object VirtualPageManager1: TVirtualPageManager
     DisplayOptions.BorderSpacing.Around = 2
-    DisplayOptions.Parent = Owner
     OnPageLoad = LoadPage
     Pages = <    
       item

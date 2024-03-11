@@ -6,11 +6,11 @@ object PageFourFrame: TPageFourFrame
   ClientHeight = 240
   ClientWidth = 320
   TabOrder = 0
-  DesignLeft = 2696
-  DesignTop = 458
+  DesignLeft = 331
+  DesignTop = 280
   object ConfigEdit: TEdit
     Left = 32
-    Height = 27
+    Height = 21
     Top = 72
     Width = 200
     OnEditingDone = ConfigEditEditingDone
@@ -19,9 +19,9 @@ object PageFourFrame: TPageFourFrame
   end
   object Label1: TLabel
     Left = 32
-    Height = 17
+    Height = 14
     Top = 56
-    Width = 148
+    Width = 112
     Caption = 'Set your configuration:'
     ParentColor = False
   end

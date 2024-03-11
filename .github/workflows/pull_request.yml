@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  COMPONENTS_VERSION: "1.1"
+  COMPONENTS_VERSION: "2.0"
       
 jobs:
   compile:
