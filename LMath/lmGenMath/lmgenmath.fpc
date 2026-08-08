@@ -1,0 +1,16 @@
+# options:
+-CX
+-XX
+-Xs
+-O2
+-MObjFPC
+-Sc
+-Sg
+-Sh
+-Si
+
+# Output:
+-FU%TARGET_PATH/$fpctarget
+
+# Units:
+-Fu.

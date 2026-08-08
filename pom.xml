@@ -23,6 +23,7 @@
         <module>jvRuntimeDesigner</module>
         <module>LNet</module>
         <module>LUIPack</module>
+        <module>LMath</module>
     </modules>
 
     <dependencyManagement>

@@ -1,3 +1,11 @@
 ?/
 target/
 *.resolved
+*.o
+*.ppu
+*.compiled
+*.bak
+LMath/demo/*
+.DS_Store
+*.rsj
+*.lfm

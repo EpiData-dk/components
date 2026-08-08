@@ -1,0 +1,19 @@
+# options:
+-CX
+-XX
+-Xs
+-O2
+-MObjFPC
+-Sc
+-Sg
+-Sh
+
+# Output:
+-FU%TARGET_PATH/$fpctarget
+
+# Units:
+-Fu.
+
+# Very special reference - requires that lmgenmath are build first!!!
+-Fu../lmGenMath/target/units/$fpctarget
+-Fu../lmMathUtil/target/units/$fpctarget
