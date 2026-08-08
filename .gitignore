@@ -6,3 +6,6 @@ target/
 *.compiled
 *.bak
 LMath/demo/*
+.DS_Store
+*.rsj
+*.lfm
